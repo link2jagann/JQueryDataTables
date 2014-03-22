@@ -1,0 +1,29 @@
+﻿@model JQueryDatatables.Models.Company
+@{
+    ViewBag.Title = "JQueryDataTablesTest";
+}
+
+<h2>JQueryDataTablesTest</h2>
+
+<div>
+    <table id="jQueryTablesTest">
+        <thead>
+            <tr> 
+                <th>Activity</th>
+                <th>ID</th>
+                <th>Company Name</th>
+                <th>Company Address</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+
+@section scripts{
+    @Styles.Render("~/Content/datatablecss")
+    @Scripts.Render("~/bundles/jqueryDataTable")
+    @Scripts.Render("~/bundles/myjquery")   
+}
